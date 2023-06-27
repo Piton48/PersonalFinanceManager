@@ -12,9 +12,6 @@ public class StatisticEngine {
     private final Map<String, String> products = new HashMap<>();
     private Map<String, List<Request>> statistic = new HashMap<>();
 
-
-
-
     public StatisticEngine(String fileName) throws IOException {
 
         Path path = Paths.get(fileName);
@@ -32,6 +29,7 @@ public class StatisticEngine {
     }
 
     public Statistic getMaxCategory() {
+
         Map<String, Integer> categories = new HashMap<>();
         int other = 0;
         for (Map.Entry<String, String> entry : products.entrySet()) {

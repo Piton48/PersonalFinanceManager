@@ -4,8 +4,10 @@ public class Request {
     private int sum;
 
 
-    public Request(){}
-    public Request(String title, String date, int sum){
+    public Request() {
+    }
+
+    public Request(String title, String date, int sum) {
         this.title = title;
         this.date = date;
         this.sum = sum;
