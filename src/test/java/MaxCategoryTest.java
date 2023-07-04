@@ -17,10 +17,10 @@ public class MaxCategoryTest {
 
 
     @Test
-    void MaxCategoryTest() throws IOException {
+    void maxCategoryTest() throws IOException {
         engine.add(new Request("булка", "2020.02.02", 100));
         engine.add(new Request("вода", "2012.02.02", 50));
-        Statistic stat = new Statistic("maxCategory","еда", 100);
-        Assertions.assertEquals(stat,engine.getMaxCategory());
+        Statistic stat = new Statistic("MaxCategory","еда", 100);
+        Assertions.assertEquals(engine.getMaxCategory(), stat);
     }
 }
